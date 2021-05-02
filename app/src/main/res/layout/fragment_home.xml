@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:text="TRAVELAH"
+                android:textColor="#ff8b3d"
+                android:fontFamily="@font/josefinsemibold"
+                android:textStyle="bold"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/tvHomeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:lineSpacingExtra="5dp"
+                android:text="Explore Malaysia virtually with us before we can head outside for another trip :D"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/josefinsemibold"
+                android:textSize="24dp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Cuti-cuti Malaysia"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/josefinsemibold"
+                android:textSize="22dp" />
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/ytVideo_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                app:videoId = "yHLW5GZ5ZKw"
+                app:autoPlay="false"
+                app:useWebUi="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="10 Best Places to Visit in Malaysia"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/josefinsemibold"
+                android:textSize="22dp" />
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/ytVideo_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                app:videoId = "sKDQFvw-wrM"
+                app:autoPlay="false"
+                app:useWebUi="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="5 Tempat Percutian Menarik Di Malaysia"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/josefinsemibold"
+                android:textSize="22dp" />
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/ytVideo_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginHorizontal="10dp"
+                app:videoId = "9XQQqSWbba4"
+                app:autoPlay="false"
+                app:useWebUi="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

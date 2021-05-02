@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".deleteAccount">
+
+    <ImageButton
+        android:id="@+id/ibBackDeleteAcc"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="338dp"
+        android:layout_marginBottom="592dp"
+        android:backgroundTint="#00FFFFFF"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24"/>
+
+    <TextView
+        android:id="@+id/tvDeleteAccTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:text="DELETE ACCOUNT"
+        android:textSize="34dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/josefinsemibold" />
+
+    <TextView
+        android:id="@+id/tvDeleteDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDeleteAccTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:padding="40dp"
+        android:text="Please enter your current password to proceed with account deletion."
+        android:textSize="20dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/etPasswordDelete"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/tvDeleteDesc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="CURRENT PASSWORD"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="#505050" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirmDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPasswordDelete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_rounded"
+        android:backgroundTint="#9400BCD4"
+        android:padding="20dp"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
